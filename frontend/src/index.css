@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=JetBrains+Mono:wght@100..800&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-base: #09090b; /* True deep black/gray */
+  --color-panel: #121214; /* IDE editor background */
+  --color-accent: #10b981; /* Matrix green */
+  --color-border: #27272a;
+}
+
+body {
+  background-color: var(--color-base);
+  color: #a1a1aa; /* Muted gray text, code-like */
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* Override default rounded corners globally to look sharper, like an IDE */
+* {
+  border-radius: 0px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #e4e4e7;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
